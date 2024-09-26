@@ -9,16 +9,14 @@ public class Exercise10 {
     // El mensaje a imprimir es → La bola es de color: COLOR_BOLA
     // COLOR_BOLA puede ser → rojo, azul, verde
     public static void main(String[] args) {
-        int cont = 0;
-        do
-        {
-            System.out.println("La bola de color es " + getBall());
-            if(getBall().equals("azul"))
-            {
+        int cont =0;
+        do{
+            String color = getBall();
+            System.out.println("La bola es de color: " +color);
+            if (color.equals("azul")){
                 cont++;
             }
-        }while(cont !=2);
-
+        }while (cont != 2);
     }
 
     //TODO ↓
@@ -42,6 +40,7 @@ public class Exercise10 {
                 color = "verde";
                 break;
         }
+
         return color;
     }
 
